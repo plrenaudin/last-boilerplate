@@ -23,8 +23,9 @@
 <script>
   export let name;
   const test = () => {
-    if(true) {}
-  }
+    if (true) {
+    } //strange
+  };
 </script>
 
 <main>
