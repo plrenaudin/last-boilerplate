@@ -1,0 +1,73 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "svelteSortOrder": "styles-scripts-markup",
+    "svelteStrictMode": true,
+    "svelteBracketNewLine": true
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
+    "ignorePatterns": [
+      "**/build/*",
+      "rollup.config.js"
+    ],
+    "plugins": [
+      "svelte3"
+    ],
+    "extends": [
+      "eslint:recommended"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.svelte"
+        ],
+        "processor": "svelte3/svelte3"
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js, *.svelte": "eslint --cache --fix",
+    "*": "prettier --write"
+  }
+}
