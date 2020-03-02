@@ -13,3 +13,12 @@
   - For svelte files too (thanks to eslint-plugin-svelte3 and prettier-plugin-svelte)
 - Most of the config in one place (package.json)
 - Focus on code (less noise as possible)
+
+## VSCode
+
+Please intall Svelte (jamesbirtles.svelte-vscode) and Prettier (esbenp.prettier-vscode) Extensions
+
+## TODO
+
+- API / backend
+- Styling (CSS / SCSS / other?)
