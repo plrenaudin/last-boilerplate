@@ -16,7 +16,7 @@
 
 ## VSCode
 
-Please intall Svelte (jamesbirtles.svelte-vscode) and Prettier (esbenp.prettier-vscode) Extensions
+For improved developer experience, install Svelte (jamesbirtles.svelte-vscode) and Prettier (esbenp.prettier-vscode) Extensions
 
 ## TODO
 
