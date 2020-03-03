@@ -9,15 +9,15 @@ npm i
 npm run dev
 ```
 
-## Tools
+## Tooling
 
-- Svelte
-- Prettier
-- Eslint
-- Rollup
-- Tailwindcss
-- Jest
-- Now (zeit.co/now)
+- __Coding__: Svelte
+- __Formatting__: Prettier
+- __Linting__: Eslint
+- __Bundling__: Rollup
+- __Styling__: Tailwindcss
+- __Testing__: Jest
+- __Deploying__: Now (Zeit)
 
 ## Developper experience first
 
