@@ -21,17 +21,13 @@ npm run dev
 
 ## Developper experience first
 
-- Staged code linted and formatted on commit (husky pre-commit + lint staged)
-  - For svelte files too (thanks to eslint-plugin-svelte3 and prettier-plugin-svelte)
-- Most of the config in one place (package.json)
+- Staged code __linted__ and __formatted__ on commit (husky pre-commit + lint staged)
+  - For _svelte_ files too (thanks to eslint-plugin-svelte3 and prettier-plugin-svelte)
+- Most of the __config in one place__ (package.json)
 - Focus on code (reduced as much noise as possible)
-  - Frontend code located in the `/src` folder
-  - API code located in the `/api` folder
+  - __Frontend__ code located in the `/src` folder
+  - __API__ code located in the `/api` folder
 
 ## VSCode
 
-For improved developer experience, install Svelte (jamesbirtles.svelte-vscode) and Prettier (esbenp.prettier-vscode) Extensions
-
-## TODO
-
-- API / backend
+For improved developer experience, install _Svelte_ (jamesbirtles.svelte-vscode) and _Prettier_ (esbenp.prettier-vscode) Extensions
