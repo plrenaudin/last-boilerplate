@@ -2,13 +2,10 @@
   export let name = "world";
 </script>
 
-<h2>Hello {name}</h2>
+<h2 class="text-4xl">Hello {name}</h2>
 
 <style>
   h2 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+    color: brown;
   }
 </style>
