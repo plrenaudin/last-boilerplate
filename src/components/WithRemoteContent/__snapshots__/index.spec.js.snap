@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Component renders My Component 1`] = `
+<body>
+  <div>
+    <p>
+      ....waiting
+    </p>
+    
+  </div>
+</body>
+`;

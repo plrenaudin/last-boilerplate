@@ -9,7 +9,7 @@ npm i
 npm run dev
 ```
 
-## Stack
+## Tools
 
 - Svelte
 - Prettier
@@ -17,6 +17,7 @@ npm run dev
 - Rollup
 - Tailwindcss
 - Jest
+- Now (zeit.co/now)
 
 ## Developper experience first
 
@@ -25,6 +26,7 @@ npm run dev
 - Most of the config in one place (package.json)
 - Focus on code (reduced as much noise as possible)
   - Frontend code located in the `/src` folder
+  - API code located in the `/api` folder
 
 ## VSCode
 

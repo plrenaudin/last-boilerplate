@@ -1,5 +1,6 @@
 <script>
   import MyComponent from "@/components/MyComponent";
+  import WithRemoteContent from "@/components/WithRemoteContent";
 </script>
 
 <main
@@ -9,7 +10,10 @@
   <MyComponent name="boilerplate" />
   <p class="m-1">
     Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
+    <a class="underline text-blue-500" href="https://svelte.dev/tutorial">
+      Svelte tutorial
+    </a>
     to learn how to build Svelte apps.
   </p>
+  <WithRemoteContent />
 </main>
