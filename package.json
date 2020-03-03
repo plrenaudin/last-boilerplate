@@ -4,17 +4,23 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "test": "jest src",
     "start": "sirv public"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "@rollup/plugin-alias": "^3.0.1",
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@testing-library/svelte": "^1.11.0",
     "autoprefixer": "^9.7.4",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "husky": "^4.2.3",
+    "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
     "postcss": "^7.0.27",
     "prettier": "^1.19.1",
@@ -25,28 +31,33 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
+    "svelte-jester": "^1.0.4",
     "svelte-preprocess": "^3.4.0",
     "tailwindcss": "^1.2.0"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
   "browserslist": [
     "defaults"
   ],
-  "prettier": {
-    "tabWidth": 2,
-    "plugins": [
-      "prettier-plugin-svelte"
-    ],
-    "svelteSortOrder": "scripts-markup-styles",
-    "svelteStrictMode": true,
-    "svelteBracketNewLine": true
-  },
   "eslintConfig": {
     "env": {
       "browser": true,
-      "es6": true
+      "es6": true,
+      "jest": true
     },
     "parserOptions": {
       "ecmaVersion": 2019,
@@ -77,8 +88,28 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "transform": {
+      "^.+\\.svelte$": "svelte-jester",
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ]
+  },
   "lint-staged": {
     "*.{js,svelte}": "eslint --fix",
-    "*": "prettier --write"
-  }
+    "*.{js,svelte,css,html,json}": "prettier --write"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "svelteSortOrder": "scripts-markup-styles",
+    "svelteStrictMode": true,
+    "svelteBracketNewLine": true
+  },
+  "type": "module"
 }

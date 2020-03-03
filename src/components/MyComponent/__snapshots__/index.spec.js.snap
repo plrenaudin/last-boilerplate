@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Component renders My Component 1`] = `
+<body>
+  <div>
+    <h2
+      class="text-4xl svelte-6a7sf5"
+    >
+      Hello 
+      world
+    </h2>
+  </div>
+</body>
+`;

@@ -3,7 +3,8 @@
 </script>
 
 <main
-  class="flex flex-col items-center bg-gray-100 min-h-screen justify-center"
+  class="container mx-auto flex flex-col items-center bg-gray-100 min-h-screen
+  justify-center"
 >
   <MyComponent name="boilerplate" />
   <p class="m-1">
