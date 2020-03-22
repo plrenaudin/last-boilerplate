@@ -8,7 +8,7 @@
   justify-center"
 >
   <MyComponent name="boilerplate" />
-  <p class="m-1">
+  <p class="my-2">
     Visit the
     <a class="underline text-blue-500" href="https://svelte.dev/tutorial">
       Svelte tutorial
