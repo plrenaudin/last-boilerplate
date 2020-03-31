@@ -16,26 +16,26 @@ export default {
     sourcemap: true,
     format: "iife",
     name: "app",
-    file: "public/build/bundle.js"
+    file: "public/build/bundle.js",
   },
   plugins: [
     svelte({
       // enable run-time checks when not in production
       dev: !production,
       preprocess: autoPreprocess({
-        postcss: true
+        postcss: true,
       }),
       // we'll extract any component CSS out into
       // a separate file - better for performance
-      css: css => {
+      css: (css) => {
         css.write("public/build/overrides.css");
-      }
+      },
     }),
     postcss({
-      extract: "public/build/bundle.css"
+      extract: "public/build/bundle.css",
     }),
     alias({
-      entries: [{ find: "@", replacement: path.resolve(__dirname, "src/") }]
+      entries: [{ find: "@", replacement: path.resolve(__dirname, "src/") }],
     }),
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -45,7 +45,7 @@ export default {
     resolve({
       browser: true,
       dedupe: ["svelte"],
-      extensions: [".mjs", ".js", ".svelte", ".json"]
+      extensions: [".mjs", ".js", ".svelte", ".json"],
     }),
     commonjs(),
 
@@ -59,11 +59,11 @@ export default {
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
-    production && terser()
+    production && terser(),
   ],
   watch: {
-    clearScreen: false
-  }
+    clearScreen: false,
+  },
 };
 
 function serve() {
@@ -76,9 +76,9 @@ function serve() {
 
         require("child_process").spawn("npm", ["run", "start", "--", "--dev"], {
           stdio: ["ignore", "inherit", "inherit"],
-          shell: true
+          shell: true,
         });
       }
-    }
+    },
   };
 }
