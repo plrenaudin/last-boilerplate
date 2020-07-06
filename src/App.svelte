@@ -1,6 +1,7 @@
 <script>
   import MyComponent from "@/components/MyComponent";
   import WithRemoteContent from "@/components/WithRemoteContent";
+  import "./main.css";
 </script>
 
 <main

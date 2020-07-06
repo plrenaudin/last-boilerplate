@@ -9,24 +9,26 @@ npm i
 npm run dev
 ```
 
+Then in another terminal run `vc dev` for Vercel support
+
 ## Tooling
 
-- __Coding__: Svelte
-- __Formatting__: Prettier
-- __Linting__: Eslint
-- __Bundling__: Rollup
-- __Styling__: Tailwindcss
-- __Testing__: Jest
-- __Deploying__: Now (Zeit)
+- **Coding**: Svelte
+- **Formatting**: Prettier
+- **Linting**: Eslint
+- **Bundling**: Rollup
+- **Styling**: Tailwindcss
+- **Testing**: Jest
+- **Deploying**: Now (Zeit)
 
 ## Developper experience first
 
-- Staged code __linted__ and __formatted__ on commit (husky pre-commit + lint staged)
+- Staged code **linted** and **formatted** on commit (husky pre-commit + lint staged)
   - For _svelte_ files too (thanks to eslint-plugin-svelte3 and prettier-plugin-svelte)
-- Most of the __config in one place__ (package.json)
+- Most of the **config in one place** (package.json)
 - Focus on code (reduced as much noise as possible)
-  - __Frontend__ code located in the `/src` folder
-  - __API__ code located in the `/api` folder
+  - **Frontend** code located in the `/src` folder
+  - **API** code located in the `/api` folder
 
 ## VSCode
 
